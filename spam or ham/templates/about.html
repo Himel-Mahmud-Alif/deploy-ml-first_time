@@ -1,0 +1,16 @@
+{% extends "layout.html" %} {% block title %} About - Spam Detector {% endblock %} {% block content %}
+<div class="container">
+    <h1>About SpamGuard</h1>
+    <p>This web application is a demonstration of a machine learning model built to classify messages as either "Spam" or "Not Spam" (often called "Ham").</p>
+
+    <h2>How It Works</h2>
+    <ul class="feature-list">
+        <li><strong>Backend:</strong> Built with the Flask web framework in Python.</li>
+        <li><strong>Machine Learning:</strong> Uses Scikit-learn to train a classifier on the SMS Spam Collection dataset.</li>
+        <li><strong>Preprocessing:</strong> Text messages are converted into numerical vectors using TF-IDF (Term Frequency-Inverse Document Frequency) before being fed to the model.</li>
+        <li><strong>Frontend:</strong> The user interface is created with HTML, Jinja templating, and styled with custom CSS for a clean and modern look.</li>
+    </ul>
+
+    <p>This project showcases a complete, end-to-end machine learning application, from data training to deployment as a web service.</p>
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %} {% block title %} Home - Spam Detector {% endblock %} {% block content %}
+<div class="container">
+    <h1>Is Your Message Spam?</h1>
+    <p class="subtitle">Enter any message below to check if it's spam or not.</p>
+
+    <form action="{{ url_for('predict') }}" method="post">
+        <textarea name="message" rows="8" placeholder="Type or paste your message here..." required="required"></textarea>
+        <button type="submit" class="btn">Check Message</button>
+    </form>
+</div>
+{% endblock %}

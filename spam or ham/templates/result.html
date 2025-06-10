@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block title %} Prediction Result {% endblock %} {% block content %}
+<div class="container result-container">
+    <h1>Prediction Result</h1>
+
+    <div class="message-box">
+        <h2>Original Message:</h2>
+        <p>"{{ message }}"</p>
+    </div>
+
+    {% if prediction == 'Spam' %}
+    <div class="prediction-box spam">
+        <h2>Result: <span>{{ prediction }}</span></h2>
+    </div>
+    {% else %}
+    <div class="prediction-box not-spam">
+        <h2>Result: <span>{{ prediction }}</span></h2>
+    </div>
+    {% endif %}
+
+    <a href="{{ url_for('home') }}" class="btn-back">Check Another Message</a>
+</div>
+{% endblock %}
