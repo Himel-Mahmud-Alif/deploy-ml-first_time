@@ -19,7 +19,7 @@ app = Flask(__name__)
 #     pipeline = None
 
 import joblib
-model = joblib.load(r"")
+model = joblib.load("Pipeline.joblib")
 # --- Define Routes ---
 
 @app.route('/')
