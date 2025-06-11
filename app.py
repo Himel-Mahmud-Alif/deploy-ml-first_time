@@ -19,7 +19,7 @@ app = Flask(__name__)
 #     pipeline = None
 
 import joblib
-model = joblib.load(r"C:\Users\LENOVO\Desktop\deploy_ml\spam or ham\Pipeline.joblib")
+model = joblib.load(r"")
 # --- Define Routes ---
 
 @app.route('/')
